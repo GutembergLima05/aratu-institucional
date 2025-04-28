@@ -1,18 +1,17 @@
 *{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    color: white;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
 }
 
 :root {
-    --cor-1: #10151B;
-    --cor-2: #ffff;
-    --cor-3: #821ED0;
-    --cor-4: #121922;
-    --cor-5:#111C29;
+    --cor-1: #ffffff; /* Fundo branco */
+    --cor-2: #000000; /* Texto padrão preto (era branco, mas agora precisa ser preto para fundo branco) */
+    --cor-3: #a01414; /* Vermelho para os detalhes */
+    --cor-4: #f0f0f0; /* Um cinza bem claro, para efeitos suaves */
+    --cor-5: #e0e0e0; /* Outro cinza claro, opcional */
 }
 
 a{
@@ -39,8 +38,9 @@ i {
     cursor: pointer;
 }
 
-body{
+body {
     background-color: var(--cor-1);
+    color: var(--cor-2);
 }
 
 

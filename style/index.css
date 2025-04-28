@@ -178,7 +178,7 @@ nav ul a {
     width: 166%;
     margin-top: 8%;
     transition: 0.6s;
-    box-shadow: 0px 0px 21px 0px rgba(195, 0, 255, 0.623);
+    box-shadow: 0px 0px 21px 0px rgba(160, 56, 56, 0.966);
     font-family: INTER1;
     font-size: 1rem;
     margin-left: -38%;
@@ -257,20 +257,51 @@ nav ul a {
 }
 
 #servicos h4 {
-    font-family: INTER1;
-    color: var(--cor-3);
-    text-align: center;
-    display: flex;
-    gap: 8%;
-    align-items: center;
+    font-family: 'Playfair Display', serif; /* Fonte mais bonita e elegante */
+    font-size: 2rem; /* Aumenta o tamanho da fonte para torná-lo mais impactante */
+    color: #000000; /* Mantém o tom suave de vermelho */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Faz o texto ficar em uma única linha */
+    gap: 5%; /* Mantém o espaço entre os itens */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras para dar um toque mais elegante */
+    margin-top: 2rem; /* Aumenta o espaçamento acima do título */
+    font-weight: 400; /* Peso de fonte mais suave */
+    text-transform: uppercase; /* Mantém a transformação para letras maiúsculas */
+    padding: 0.5rem; /* Um pouco de padding para dar um respiro ao redor do texto */
+    background: linear-gradient(45deg, #110d0c, #130a0a); /* Gradiente suave de vermelho */
+    background-clip: text; /* Aplica o gradiente ao texto */
+    color: transparent; /* Faz o texto transparente para mostrar o gradiente */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Sombra leve para um efeito de brilho */
+    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
 }
 
-#servicos h4 span {
-    padding: 0.1px 2px 8px 5px;
-    background-color: var(--cor-3);
-    border-radius: 50px;
-    height: 40%;
+/* Efeito ao passar o mouse */
+#servicos h4:hover {
+    color: #080808; /* Restaura o tom de vermelho mais suave */
+    text-shadow: 0 0 10px rgba(10, 8, 8, 0.8), 0 0 20px rgbrgba(19, 13, 13, 0.6)/* Efeito de brilho */
+    transform scale(1.05) /* Aumenta o tamanho do título suavemente */
+}
 
+/* Animação de aparição gradual */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação ao título */
+#servicos h4 {
+    animation: fadeIn 1s ease-out forwards; /* Aparece suavemente com animação */
+}
+
+/* Aumenta o espaçamento do h1 para o h4 */
+h1 {
+    margin-bottom: 3rem; /* Aumenta o espaço entre o h1 e o h4 */
 }
 
 canvas {

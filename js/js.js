@@ -71,7 +71,7 @@ AOS.init();
 particlesJS("particles-container", {
   particles: {
     number: { value: 150, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
+    color: { value: "a01414" },
     shape: {
       type: "triangle",
       stroke: { width: 0, color: "#000000" },
@@ -91,7 +91,7 @@ particlesJS("particles-container", {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#821ED0",
+      color: "a01414",
       opacity: 0.4,
       width: 1
     },
