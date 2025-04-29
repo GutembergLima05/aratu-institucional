@@ -1,12 +1,16 @@
 /* menu */
 nav {
-    background-color: var(--cor-1);
+    background-color: var(--cor-6);
     display: flex;
     justify-content: space-between;
+    align-items: center; /* para centralizar verticalmente */
+    height: 100px; /* altura fixa da barra */
     z-index: 9;
     border-bottom: 1px solid rgba(100, 21, 204, 0.13);
     font-family: INTER3;
     top: 0;
+    position: fixed; /* se quiser que fique sempre visível */
+    width: 100%;
 }
 
 #icon-burguer,
@@ -22,6 +26,7 @@ nav {
 
 #img-menu {
     background-size: cover;
+    height: 100%; /* ocupa toda a altura da barra */
     padding: 2% 1.5%;
     transition: 1s;
     margin-left: 2%;
@@ -30,9 +35,9 @@ nav {
     align-items: center;
 }
 
+
 #img-menu img {
-    width: 3rem;
-    /* height: 3.5rem; */
+    width: 9rem; /* height: 3.5rem; */
     transition: 0.5s;
     z-index: 99 !important;
 }
@@ -81,8 +86,7 @@ nav ul a {
     align-items: center;
     padding: 2%;
     border-bottom: 3px solid transparent;
-    transition: 0.3s;
-    transition: border-bottom-width 1s ease-in-out;
+    transition: 0.3s, border-bottom-width 1s ease-in-out;
     font-family: INTER1;
 }
 
@@ -278,7 +282,7 @@ nav ul a {
 /* Efeito ao passar o mouse */
 #servicos h4:hover {
     color: #080808; /* Restaura o tom de vermelho mais suave */
-    text-shadow: 0 0 10px rgba(10, 8, 8, 0.8), 0 0 20px rgbrgba(19, 13, 13, 0.6)/* Efeito de brilho */
+    text-shadow: 0 0 10px rgba(10, 8, 8, 0.8), 0 0 20px rgba(175, 59, 59, 0.6)/* Efeito de brilho */
     transform scale(1.05) /* Aumenta o tamanho do título suavemente */
 }
 

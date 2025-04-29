@@ -16,7 +16,7 @@ imgMenu.addEventListener("mouseout", ()=>{
 
 function menu() {
 
-  if (statusMenu == "fechado") {
+  if (statusMenu === "fechado") {
     iconBurguer.style.display = "none";
     iconX.style.display = "block";
     menuMobile.style.left = "0";
@@ -91,7 +91,7 @@ particlesJS("particles-container", {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "a01414",
+      color: "#a01414",
       opacity: 0.4,
       width: 1
     },
