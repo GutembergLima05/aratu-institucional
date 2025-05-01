@@ -1,3 +1,20 @@
+//inicializando caroussel
+document.addEventListener('DOMContentLoaded', function () {
+  new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 3000,
+    hoverpause: true,
+    breakpoints: {
+      768: {
+        perView: 1
+      }
+    }
+  }).mount();
+
+
+});//menu
 let statusMenu = "fechado";
 let iconBurguer = document.getElementById('icon-burguer');
 let iconX = document.getElementById('icon-x');

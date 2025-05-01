@@ -13,6 +13,8 @@
     --cor-4: #f0f0f0; /* Um cinza bem claro, para efeitos suaves */
     --cor-5: #e0e0e0; /* Outro cinza claro, opcional */
     --cor-6: #dfd7d7a8;
+    --cor-7: #292929;
+    --cor-8: #701111; /* Vermelho para os detalhes */
 }
 
 a{

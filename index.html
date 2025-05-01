@@ -10,6 +10,7 @@
     <title>Aratu - Soluções Digitais para Empresas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <i onclick="menu()" id="icon-burguer" class="fa-solid fa-bars"></i>
         <i onclick="menu()" id="icon-x" class="fa-solid fa-x"></i>
         <ul id="menu-mobile">
-            <a href="#img-menu">
+            <a href="#">
                 <li class="itens-menu">Home</li>
             </a>
             <a href="#servicos">
@@ -94,11 +95,26 @@
             <a href="#" title="Em Desenvolvimento"><img src="img/futurosParceiros.png" alt=""></a> 
         </div>
     </section> -->
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/valverde-real-madrid-bilbao-e1745183317665.jpg?w=690&h=389&crop=1&quality=85" alt="Imagem 1"><label>Valverde </label></li>
+            <li class="glide__slide"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/santiago-bernabeu-real-madrid-e1707585751696.jpg?w=1220&h=674&crop=1&quality=85" alt="Imagem 2"><label>Valverde </label></li>
+            <li class="glide__slide"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/valverde-real-madrid-bilbao-e1745183317665.jpg?w=690&h=389&crop=1&quality=85" alt="Imagem 3"><label>Valverde </label></li>
+          </ul>
+        </div>
+      
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">«</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">»</button>
+        </div>
+      </div>
 
+      
     <section id="sobre">
         <div id="empresa-img"><img src="img/sobre.png" alt=""></div>
         <div id="empresa-text">
-            <h4><span></span>Sobre nós <span></span></h4>
+            <!-- <h4><span></span>Sobre nós <span></span></h4> -->
             <h1>Um pouco sobre nós</h1>
             <h5> Agentes de Redes Articuladas em Territórios Urbanos – 
                 é uma organização comprometida em gerar impacto positivo, 
@@ -140,19 +156,18 @@
         </div>
         <div id="footer-copywite">
             <div id="copywrite">
-                <img src="img/logo.png">
+                <img src="img/logo.vermelha.2-Photoroom.png">
                 <h6>Copyright @Aratu 2025</h6>
             </div>
 
-            <a href="#particles-container"><i class="fa-solid fa-circle-up"></i></a>
+            <a href="#particles-container"><!--<i class="fa-solid fa-circle-up"></i>--><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="js/js.js"></script>
 
 </body>
-
 </html>

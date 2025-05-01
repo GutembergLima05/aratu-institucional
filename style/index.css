@@ -1,6 +1,6 @@
 /* menu */
 nav {
-    background-color: var(--cor-6);
+    background-color: var(--cor-1);
     display: flex;
     justify-content: space-between;
     align-items: center; /* para centralizar verticalmente */
@@ -11,6 +11,7 @@ nav {
     top: 0;
     position: fixed; /* se quiser que fique sempre visível */
     width: 100%;
+    font-family: 'Inter', sans-serif;
 }
 
 #icon-burguer,
@@ -22,6 +23,7 @@ nav {
     border-radius: 50px;
     cursor: pointer;
     background-color: var(--cor-3);
+    color: var(--cor-1);
 }
 
 #img-menu {
@@ -79,6 +81,7 @@ nav ul {
 nav ul a {
     display: flex;
     flex-direction: row;
+    width: 8%;
 }
 
 .itens-menu {
@@ -88,6 +91,7 @@ nav ul a {
     border-bottom: 3px solid transparent;
     transition: 0.3s, border-bottom-width 1s ease-in-out;
     font-family: INTER1;
+    width: 100%;
 }
 
 .itens-menu:hover {
@@ -98,7 +102,9 @@ nav ul a {
     #icon-burguer {
         display: block;
     }
-
+    nav ul a {
+        width: 100%;
+    }
     nav {
         align-items: center;
         border-bottom: none;
@@ -106,22 +112,22 @@ nav ul a {
 
     #img-menu {
         padding: 7%;
-        width: 50%;
+        width: 35%;
     }
 
     nav ul {
         position: fixed;
         background-color: var(--cor-1);
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         height: 100%;
-        width: 100%;
         top: 25vw;
-        font-size: 1.5rem;
         left: -100%;
         transition: 1s;
         z-index: 9;
+        padding: 10%;
+        font-size: 1.2rem;
     }
 
     #img-menu:hover {
@@ -154,10 +160,12 @@ nav ul a {
     text-align: center;
     margin-left: -0.8%;
     width: 100%;
+    margin-top: 10%;
 }
 
 #particles-container h3 {
     color: var(--cor-3);
+    margin-top: 5%;
 }
 
 #particles-container h1 {
@@ -169,7 +177,7 @@ nav ul a {
 #particles-container h4 {
     width: 50%;
     font-family: INTER2;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #particles-container a button {
@@ -182,7 +190,8 @@ nav ul a {
     width: 166%;
     margin-top: 8%;
     transition: 0.6s;
-    box-shadow: 0px 0px 21px 0px rgba(160, 56, 56, 0.966);
+    box-shadow: 0px 0px 31px 0px #d80c0cf6;
+    color: var(--cor-1);
     font-family: INTER1;
     font-size: 1rem;
     margin-left: -38%;
@@ -191,12 +200,14 @@ nav ul a {
     justify-content: center;
     column-gap: 5%;
     border: 2px solid transparent;
+    margin-top: 20%;
 }
 
 #particles-container a button:hover {
     border: 2px solid var(--cor-3);
     background-color: var(--cor-1);
     transform: scale(1.1);
+    color: var(--cor-3);
 }
 
 #particles-container a button i {
@@ -248,8 +259,10 @@ nav ul a {
 }
 
 #servicos h1{
-    font-family: INTER3;
+    font-family: INTER1;
     width: 40%;
+    font-weight: 100;
+    font-size: 1.1rem;
 }
 
 #sub-servicos {
@@ -261,7 +274,7 @@ nav ul a {
 }
 
 #servicos h4 {
-    font-family: 'Playfair Display', serif; /* Fonte mais bonita e elegante */
+    font-family: INTER3; /* Fonte mais bonita e elegante */
     font-size: 2rem; /* Aumenta o tamanho da fonte para torná-lo mais impactante */
     color: #000000; /* Mantém o tom suave de vermelho */
     text-align: center; /* Centraliza o texto */
@@ -270,7 +283,6 @@ nav ul a {
     letter-spacing: 1px; /* Aumenta o espaçamento entre as letras para dar um toque mais elegante */
     margin-top: 2rem; /* Aumenta o espaçamento acima do título */
     font-weight: 400; /* Peso de fonte mais suave */
-    text-transform: uppercase; /* Mantém a transformação para letras maiúsculas */
     padding: 0.5rem; /* Um pouco de padding para dar um respiro ao redor do texto */
     background: linear-gradient(45deg, #110d0c, #130a0a); /* Gradiente suave de vermelho */
     background-clip: text; /* Aplica o gradiente ao texto */
@@ -301,11 +313,6 @@ nav ul a {
 /* Aplica a animação ao título */
 #servicos h4 {
     animation: fadeIn 1s ease-out forwards; /* Aparece suavemente com animação */
-}
-
-/* Aumenta o espaçamento do h1 para o h4 */
-h1 {
-    margin-bottom: 3rem; /* Aumenta o espaço entre o h1 e o h4 */
 }
 
 canvas {
@@ -342,7 +349,7 @@ canvas {
 .card h6{
     font-family: INTER2;
     font-size: 1rem;
-    color: #cfcece;
+    color: var(--cor-7);
 }
 
 .card img{
@@ -451,7 +458,7 @@ canvas {
     font-family: INTER2;
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(207, 206, 206);
+    color: var(--cor-7);
 }
 
 @media screen and (max-width: 1050px) {
@@ -494,20 +501,25 @@ footer {
 #menu-mobile {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #footer-copywite i {
-    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
     border-radius: 50%;
     color: var(--cor-4);
     transition: 0.6s;
-    border: 2px solid var(--cor-3);
-    background: linear-gradient(to bottom, #8a34db, #2e058b);
+    background: linear-gradient(to bottom, var(--cor-3), var(--cor-8));
 }
 
 #copywrite {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 #copywrite img {
@@ -524,6 +536,7 @@ footer {
     transform: 0.6s;
     padding: 55%;
     background-color: var(--cor-3);
+    color: var(--cor-1);
     border-radius: 50px;
     transition: 0.6s;
 }
@@ -536,6 +549,7 @@ footer {
 #copywrite h6 {
     font-family: sans-serif;
     font-size: 0.8rem;
+    margin-left: 2%;
 }
 
 @media screen and (max-width: 1050px) {
@@ -544,6 +558,7 @@ footer {
     }
     #menu-mobile{
         margin-top: -6%;
+        width: 80%;
     }
     nav{
         position: fixed;
@@ -552,4 +567,26 @@ footer {
     #icon-burguer, #icon-x{
         z-index: 99 !important;
     }
+}
+
+
+.glide{
+    margin-top: 10%;
+}
+.glide__slides li img{
+    width: 100%;
+}
+
+.glide__arrows{
+    display: flex;
+    justify-content: center;
+}
+.glide__arrow {
+    padding:15px ;
+    margin: 2%;
+    cursor: pointer;
+    background-color: var(--cor-3);
+    border: none;
+    color: var(--cor-1);
+    border-radius: 10px;
 }
