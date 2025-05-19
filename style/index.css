@@ -443,7 +443,7 @@ canvas {
 }
 
 #empresa-text h4{
-    color: var(--cor-3);
+    color: var(--cor-8);
 }
 
 #empresa-text h4 span{
@@ -459,6 +459,7 @@ canvas {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--cor-7);
+    text-align: justify;
 }
 
 @media screen and (max-width: 1050px) {
@@ -570,12 +571,60 @@ footer {
 }
 
 
-.glide{
+
+.carrossel-card {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor-1);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.carrossel-card img {
+    width: 100%;
+    height: 250px;
+    max-width: 600px;
+    display: block;     /* Garante que margens funcionem corretamente */
+    margin: 0 auto 1rem; /* Centraliza a imagem e adiciona espaçamento inferior */
+    border-radius: 12px;  /* Opcional: bordas arredondadas para visual mais suave */
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.carrossel-card img:hover {
+    transform: scale(1.02); /* Efeito de zoom suave no hover */
+}
+
+.carrossel-titulo {
+    font-family: INTER3;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    color: var(--cor-3);
+}
+
+.carrossel-descricao {
+    font-family: INTER1;
+    font-size: 0.95rem;
+    color: #000000d8;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+/*.glide{
     margin-top: 10%;
 }
+
+.glide__slides li {
+    height: 250px; /* altura padrão dos slides 
+}
+
 .glide__slides li img{
     width: 100%;
-}
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}*/
 
 .glide__arrows{
     display: flex;
@@ -589,4 +638,76 @@ footer {
     border: none;
     color: var(--cor-1);
     border-radius: 10px;
+}
+
+#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+#empresa-img {
+  flex: 1 1 300px;
+  max-width: 450px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#empresa-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#empresa-img img:hover {
+  transform: scale(1.05);
+}
+
+#empresa-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+#empresa-text h1 {
+  font-family: INTER3, sans-serif;
+  color: var(--cor-7);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+#empresa-text h5 {
+  font-family: INTER1, sans-serif;
+  color: var(--cor-7);
+  line-height: 1.7;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  #sobre {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  
+  #empresa-img, #empresa-text {
+    max-width: 100%;
+  }
+  
+  #empresa-text h5 {
+    text-align: left;
+  }
 }
